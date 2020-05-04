@@ -28,7 +28,7 @@ import java.util.regex.Pattern;
 public class EmailValidation implements PropertyValidation {
 
     private static final long            serialVersionUID = 1601992764743773124L;
-    private static final Pattern         PATTERN          = Pattern.compile("[\\w\\!\\#\\$\\%\\&\\'\\*\\+\\-\\/\\=\\?\\^\\`\\{\\|\\}\\~][\\w\\!\\#\\$\\%\\&\\'\\*\\+\\-\\/\\=\\?\\^\\`\\{\\|\\}\\~\\.]*@[a-zA-Z0-9\\.-]+\\.[a-zA-Z]{2,4}");
+    private static final Pattern         PATTERN          = Pattern.compile("[\\w\\!\\#\\$\\%\\&\\'\\*\\+\\-\\/\\=\\?\\^\\`\\{\\|\\}\\~][\\w\\!\\#\\$\\%\\&\\'\\*\\+\\-\\/\\=\\?\\^\\`\\{\\|\\}\\~\\.]*@[a-zA-Z0-9\\.-]+\\.[a-zA-Z]{2,63}");
     private static final EmailValidation INSTANCE         = new EmailValidation();
 
     public static EmailValidation instance() {
